@@ -350,3 +350,28 @@ console.log(jsonObjFull); // Object {   country: "Brazil",   name: "mike",   yea
 }());
 
 ```
+
+## JS - insert html
+**inserts the resulting html into the DOM tree at a specified position**
+
+```javascript
+// <div id="one">one</div>
+var d1 = document.getElementById('one');
+d1.insertAdjacentHTML('afterend', '<div id="two">two</div>');
+
+// At this point, the new structure is:
+// <div id="one">one</div><div id="two">two</div>
+```
+
+``` html
+<!-- beforebegin -->
+<p>
+  <!-- afterbegin -->
+  foo
+  <!-- beforeend -->
+</p>
+<!-- afterend -->
+
+```
+
++ info - https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
